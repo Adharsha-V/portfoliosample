@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adharsha Vijayakumar - Portfolio</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif}
+    body{background:#fefefe;color:#111}
+    header{background:#111;color:#fff;padding:20px;text-align:center}
+    nav{background:#222;display:flex;justify-content:center}
+    nav a{color:#fff;padding:14px 20px;text-decoration:none}
+    nav a:hover{background:#444}
+    section{padding:40px 20px}
+    .intro{text-align:center}
+    .skills,.projects,.certifications{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-top:30px}
+    .card{background:#111;color:#fff;padding:20px;border-radius:10px;text-align:center}
+    h2{text-align:center;margin-bottom:20px}
+    ul{list-style:none;padding-left:0}
+    li{margin-bottom:8px}
+    button{padding:10px 20px;background:#111;color:#fff;border:none;border-radius:5px;cursor:pointer;margin-top:20px}
+    button:hover{background:#333}
+    footer{background:#111;color:#fff;text-align:center;padding:15px}
+    @media(max-width:600px){.skills,.projects,.certifications{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Adharsha Vijayakumar</h1>
+    <p>Web Developer | Mobile App Developer | Creative Engineer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#education">Education</a>
+  </nav>
+
+  <section id="about" class="intro">
+    <h2>About Me</h2>
+    <p>I’m a passionate engineering student with strong interests in web development, mobile apps, and real-time projects. I’m dedicated, flexible, and eager to gain professional experience. My journey includes hands-on work with Flutter, Android Studio, and creative solutions like auto-tilting furnaces and AI-integrated chatbots. I enjoy taking challenges that combine tech with real-world impact.</p>
+    <button onclick="downloadResume()">Download Resume</button>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">HTML</div>
+      <div class="card">CSS</div>
+      <div class="card">JavaScript</div>
+      <div class="card">Java</div>
+      <div class="card">C</div>
+      <div class="card">Flutter</div>
+      <div class="card">Android Studio</div>
+      <div class="card">VS Code</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>College Admin App</h3>
+        <p>Developed in Flutter during internship to manage college data efficiently.</p>
+      </div>
+      <div class="card">
+        <h3>Food Delivery App</h3>
+        <p>Designed a responsive food ordering platform with user-friendly UI.</p>
+      </div>
+      <div class="card">
+        <h3>Grocery Delivery App</h3>
+        <p>Built a grocery app with delivery tracking and modern design.</p>
+      </div>
+      <div class="card">
+        <h3>Auto-Tilting Electric Furnace</h3>
+        <p>IoT-powered furnace controlled via app. Won Best Project Award.</p>
+      </div>
+      <div class="card">
+        <h3>AI Medical Chatbot</h3>
+        <p>NLP + ML chatbot to assist doctors and improve patient care.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="certifications">
+      <div class="card">
+        <h3>Business English Certificate</h3>
+        <p>Cambridge English (B2 - 167/200)</p>
+      </div>
+      <div class="card">
+        <h3>NPTEL Course</h3>
+        <p>Cybersecurity & Privacy (62%)</p>
+      </div>
+      <div class="card">
+        <h3>Infosys AI Primer</h3>
+        <p>Completed 100% progress</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul style="text-align:center">
+      <li><strong>BE - CSE (2022–2026)</strong><br>Sri Ramakrishna Engineering College – CGPA: 8.51</li>
+      <li><strong>HSC (2021–2022)</strong><br>Score: 95.6%</li>
+      <li><strong>SSLC (2019–2020)</strong><br>Score: 77.6%</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>📞 7604963700 | 📧 adharshavj1104@gmail.com | 📍 Saravanampatti, Coimbatore</p>
+    <p>Languages Known: Tamil, English, Malayalam</p>
+    <p>&copy; 2025 Adharsha V. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function downloadResume(){
+      window.open("AdharshaV(srec)_resume.pdf", "_blank")
+    }
+  </script>
+
+</body>
+</html>
